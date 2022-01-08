@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+#location{
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+li{
+  padding: 10px;
+}
+
+.global-box{
+  display: flex;
+  flex-direction: column;
+  border-radius:10px ;
+   border: 1px solid #1e1e1e;
+   width: 600px;
+}
+
+/*Home component container*/
+
+.home-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   padding: 20px;
+   
+   
+}
+
+/*Main component Box*/
+
+.main-box{
+  padding: 20px;
+  margin-right: 5px;
+
+}
+
+.main-box li{
+  font-family: fantasy;
+}
+
+.tempBox{
+  display: flex;
+  align-items: center;
+  /*justify-content: center;*/
+}
+
+/*minMax component box*/
+
+.minMax-box{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-left: 5px;
+}
+
+.minMax-box span{
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid gray;
+  margin: 10px;
+}
+
+
+
+/*ToggleComp Box*/
+
+.toggleComp-box{
+  display: flex;
+  align-items: center;
+  
+
+  
+}
+
+/*.box-btn_toggle button{
+  padding: 10px;
+  border:none;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}*/
+
+
+
+.toggleItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+
+}
+
+
+
+.icon-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-btn_toggle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn-box{
+  margin: 5px;
+  border-radius: 10px;
+  background: -webkit-linear-gradient(-45deg, #a9e4f7 0%,#0fb4e7 100%);
+  padding: 5px;
+  border: none;
+}
+
+/*seven days forcast*/
+
+.sevenDays{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 25px;
+
+}
