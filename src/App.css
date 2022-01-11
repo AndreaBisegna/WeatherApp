@@ -1,3 +1,6 @@
+
+
+
 .App {
   text-align: center;
 }
@@ -87,14 +90,6 @@ li{
   
 }
 
-/*.box-btn_toggle button{
-  padding: 10px;
-  border:none;
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  background-color: white;
-}*/
 
 
 
@@ -105,7 +100,7 @@ li{
   justify-content: center;
   margin: 20px;
   padding: 10px;
-
+  
 }
 
 
@@ -122,6 +117,17 @@ li{
   flex-direction: column;
 }
 
+.box-btn_toggle button{
+ padding: 5px;
+ border:none;
+ color: whitesmoke;
+ font-weight: bold;
+ border-radius: 10px;
+ margin: 10px;
+ display: flex;
+ align-items: center;
+ background: -webkit-linear-gradient(-45deg, #3f4c6b 0%,#3f4c6b 100%);
+}
 .btn-box{
   margin: 5px;
   border-radius: 10px;
@@ -139,4 +145,32 @@ li{
   flex-direction: row;
   margin: 25px;
 
+}
+
+
+/*Media Query*/
+
+@media only screen and (min-width:960px) and (max-width: 1199px) {
+  
+}
+
+/*Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 959px) { 
+	
+
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 767px) {
+	.global-box{
+    border: none;
+    width: 400px;
+  }
+
+  
+
+  .toggleItem{
+    width: 38px;
+  }
 }

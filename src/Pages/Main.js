@@ -4,11 +4,7 @@ import '../App.css';
 
 const Main = ({name, weather}) => {
 
-  const converter = (temp) => {
-    return (5/9) * ( temp -32 );
-  }
 
-  const tempCelsius = converter(weather.temperature.actual);
   
   
   return (
@@ -18,7 +14,7 @@ const Main = ({name, weather}) => {
        <li>{weather.summary.title}</li>
        
        <li className='tempBox'>
-       {tempCelsius}
+       {weather.temperature.actual}
          <WiFahrenheit size={35}/>
        </li>
       

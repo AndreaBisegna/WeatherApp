@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { WiCloudyWindy, WiHumidity, WiBarometer, WiSunrise } from "weather-icons-react";
 import Humidity from './Humidity';
 import WindSpeed from './WindSpeed';

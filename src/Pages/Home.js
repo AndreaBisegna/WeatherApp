@@ -10,51 +10,51 @@ import ToggleComp from './ToggleComp';
 import ForSeven from './ForSeven';
 
 
-
-
 const Home = () => {
 
   const { loading, error, data } = useQuery(GET_WEATHER_QUERY);
   const [show, setShow] = useState(false);
 
   const [back, setBack] = useState("");
-  
-  const style = (title) => {
-    if(title == "Clouds"){
+
+
+  /*function to assign style depending on the weather Summary Title*/
+  /*const style = (title) => {
+    if (title === "Clouds") {
       setBack("../image/clouds.jpeg")
     }
-    else if(title == "Sunny"){
+    else if (title === "Sunny") {
+
       setBack("../image/sunny.jpeg")
     }
-    else if(title == "Raining"){
+    else if (title === "Raining") {
       setBack("../image/raining.jpeg")
     }
-    else if(title == "Snowing"){
+    else if (title === "Snowing") {
       setBack("../image/snowing.jpeg")
     }
-  };
+  };*/
   if (loading) return <Loading />;
-  
+
+
   if (error) return <Error />;
-  
+
   if (data) {
-    
+
     console.log(data.getCityByName);
-    
-    
-    style(data.getCityByName.weather.summary.title);
+
+    //style(data.getCityByName.weather.summary.title);
     
   };
-  
-  
- 
- 
-  
-  return (
+
+
+
+return (
     <div className='global-box'>
-      <div className='home-container' styles={{ backgroundImage:`url(${back})` }}>
       
-        <Main name={data.getCityByName.name} weather={data.getCityByName.weather}/>
+      <div className='home-container' styles={{ backgroundImage: `url(${back})` }}>
+
+        <Main name={data.getCityByName.name} weather={data.getCityByName.weather} />
         <div>
           <MinMax temperature={data.getCityByName.weather.temperature} />
         </div>
@@ -68,6 +68,8 @@ const Home = () => {
       <div>
         <ForSeven />
       </div>
+      
+    
     </div>
   );
 }
